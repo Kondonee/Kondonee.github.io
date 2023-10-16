@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 5</title>
+   <link rel="stylesheet" href="reset.css" />
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">       
+   <link rel="stylesheet" href="ch05-proj1.css" />
+</head>
+<body>
+
+    <section>
+      <table>
+         <h3>Data</h3>
+         <caption>Orders</caption>
+         
+   <tr>
+      <th>Id</th>
+      <th>Date</th>
+      <th>Customer</th>
+      <th>Country</th>
+      <th>Progress</th>
+      <th>Status</th>
+  </tr>
+
+  <tr>
+   <td>123</td>
+   <td>Sept 17,2017</td>
+   <td>Jean Rousseau</td>
+   <td>France</td>
+
+  <td>
+
+   <div class="container">
+    <div class="progress-bar"> </div>
+  
+     
+   </div>
+
+  </td>
+
+  <td>
+   
+   <span class="status status-shipped">Shipped</span>
+
+  </td>
+
+  </tr>
+
+  <tr> 
+   <td>144</td>
+   <td>Sept 20, 2017</td>
+   <td>Gerog Hegel</td>
+   <td>Germany</td>
+
+  <td>
+   <div class="container">
+    <div class="progress-bar"></div>
+
+      
+   </div>
+   
+  </td>
+
+
+  <td>
+
+   <span class="status status-shipped">Shipped</span>
+
+  </td>
+
+  </tr>
+
+  <tr> 
+   <td>149</td>
+   <td>Oct 3, 2017</td>
+   <td>John Locke</td>
+   <td>England</td>
+
+  <td>
+
+   <div class="container">
+     <div class="progress-value"> </div>
+
+   </div>
+
+  </td>
+
+  <td>
+
+   <span class="status status-processing">Processing</span>
+
+  </td>
+   
+
+  </tr>
+
+   <tr> 
+   <td>162</td>
+   <td>Oct 8, 2017</td>
+   <td>Thomas Hobbers</td>
+   <td>England</td>
+
+  <td>
+
+   <div class="container">
+     <div class="progress-equal"> </div>
+   </div>
+
+  </td>
+
+  <td>
+
+   <span class="status status-pending">Pending</span>
+
+  </td>
+
+  </tr>
+
+  <tr> 
+   <td>177</td>
+   <td>Oct 10, 2017</td>
+   <td>Johann Fichte</td>
+   <td>Germany</td>
+
+  <td>
+
+   <div class="container">
+     <div class="progress-equal"> </div>
+
+   </div>
+
+  </td>
+
+  <td>
+
+   <span class="status status-pending">Pending</span>
+
+  </td>
+
+  </tr>
+  </table> 
+  </section>
+
+  <section>
+   <h3>Revise</h3>
+   <fieldset>
+   <Legend>Filter Orders</Legend>
+
+
+  <form action="https://www.randyconnolly.com/tests/process.php" method="get">
+
+  <div>
+   <label for="customer"><b>Customer</b></label> <br>
+   <input type="text" id="customer" name="customer">
+
+  </div>
+
+   <br>
+
+  <div>
+   <label for="country"><b>Country</b></label> <br>
+   <select id="country" name="country">
+   <option value="Choose a country">Choose a country</option>
+   <option value="France">France</option>
+   <option value="Germany">Germany</option>
+   <option value="England">England</option>
+   
+  </select>
+
+  </div>
+
+   <br>
+
+  <div>
+   <label for="status"><b>Status</b></label> <br>
+
+   <input type="radio" name="status" value="Pending"> 
+   <label>Pending</label>
+     
+   <input type="radio" name="status" value="Processing">
+   <label>Processing</label>
+
+      
+   <input type="radio" name="status" value="Shipped">
+   <label>Shipped</label>
+  </div>
+
+   
+   <br>
+
+  <div>
+   <label for="od"><b>Order Date</b></label> <br>
+   <input type="date" id=" date" name=" date">
+
+  </div>
+
+   <br>
+
+  <div>
+
+   <input type="submit" id="submit">
+
+  </div>
+
+</fieldset>
+</form>
+</section>    
+
+
+</body>
+</html>
